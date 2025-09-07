@@ -6,6 +6,7 @@ theme: jekyll-theme-chirpy
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
+title: awesomeAI
 lang: en
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
@@ -14,7 +15,7 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+# title: Chirpy # the main title
 
 tagline: A text-focused Jekyll theme # it will display as the subtitle
 
@@ -26,6 +27,8 @@ description: >- # used by seo meta and the atom feed
 # url: "https://jhyoon964.github.io/awesomeAI.github.io"
 url: "https://jhyoon964.github.io"
 baseurl: "/awesomeAI.github.io"
+
+remote_theme: cotes2020/jekyll-theme-chirpy
 
 github:
   username: jhyoon # change to your GitHub username
