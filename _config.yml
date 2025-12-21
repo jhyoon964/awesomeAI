@@ -2,7 +2,7 @@
 plugins:
   - jekyll-include-cache
   - jekyll-paginate
-
+  - jekyll-seo-tag
 
 # Import the theme
 # theme: jekyll-theme-chirpy
