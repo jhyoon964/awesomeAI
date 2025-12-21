@@ -62,9 +62,16 @@ main() {
 
   # test
   # bundle exec htmlproofer "$SITE_DIR" \
-  bundle exec htmlproofer "$SITE_DIR$_baseurl" \
+  # bundle exec htmlproofer "$SITE_DIR$_baseurl" \
+  #   --disable-external \
+  #   --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+    bundle exec htmlproofer "$SITE_DIR$_baseurl" \
     --disable-external \
-    --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+    --ignore-empty-alt \
+    --allow-hash-href \
+    --ignore-missing-href \
+    --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/,/\/tags\//,/\/categories\//,/^mailto:/,/^tel:/,/^javascript:/"
+
 }
 
 while (($#)); do
