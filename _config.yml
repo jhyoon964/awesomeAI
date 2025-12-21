@@ -3,6 +3,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-paginate
 
+
 # Import the theme
 # theme: jekyll-theme-chirpy
 # theme: cotes2020/jekyll-theme-chirpy
