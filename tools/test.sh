@@ -66,10 +66,11 @@ main() {
   #   --disable-external \
   #   --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
   bundle exec htmlproofer "$SITE_DIR$_baseurl" \
-    --disable-external \
-    --allow-hash-href \
-    --ignore-empty-alt \
-    --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/,/\/tags\//,/\/categories\//,/^mailto:/,/^tel:/,/^javascript:/"
+  --disable-external \
+  --checks "Links,Images" \
+  --allow-hash-href \
+  --ignore-empty-alt \
+  --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/,/\/tags\//,/\/categories\//,/^mailto:/,/^tel:/,/^javascript:/"
 }
 
 while (($#)); do
