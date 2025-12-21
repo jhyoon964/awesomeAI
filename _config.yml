@@ -1,4 +1,7 @@
 # The Site Configuration
+plugins:
+  - jekyll-include-cache
+  - jekyll-paginate
 
 # Import the theme
 # theme: jekyll-theme-chirpy
@@ -229,4 +232,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-    
